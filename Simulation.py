@@ -167,7 +167,7 @@ class Application(Frame):
 	# function for generating image
 
 	def __create_canvas(self):
-		self.img = ImageTk.PhotoImage(Image.open("water_sensor_300x350.jpg"))
+		self.img = ImageTk.PhotoImage(Image.open("water_sensor_image.jpg"))
 		self.canvas = Canvas(self, width = 300, height = 350)
 		self.canvas.grid(row = 1, column = 5,rowspan = 6)
 		self.canvas.create_image(150, 200, image = self.img)
